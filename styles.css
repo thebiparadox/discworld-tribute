@@ -25,11 +25,11 @@ body {
 
 .book-gallery {
     display: flex;
-    justify-content: center;
     flex-flow: row wrap;
     align-items: center;
     gap: 16px;
     margin: 0 auto;
+    padding: 10%;
 }
 
 .book-gallery img {
