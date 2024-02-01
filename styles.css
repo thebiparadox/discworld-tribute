@@ -1,9 +1,13 @@
 * {
     box-sizing: border-box;
+    --content1: #C3B1E1;
+    --content2: #FFFFF580;
 }
 
 body {
     margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .intro {
@@ -35,6 +39,62 @@ body {
 /* margins */
     margin-top: 0;
     margin-bottom: 0.5em;
+}
+
+.content {
+
+/* margins and padding */
+    padding: 4em;
+    margin: 4em;
+    border: 1px solid black;
+
+/* background styles */
+    background-color: var(--content2);
+}
+
+.memorial {
+    /* sizing */
+        width: 100vw;
+        height: 100vh;
+    
+    /* flexbox */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    /* margins */
+        margin: 0 auto;
+    
+    /* background styles */
+        background-image: url(./site-images/terry-pratchett-tribute-memorial.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+.quotation {
+ /* sizing */
+ width: 100vw;
+ height: 100vh;
+
+/* flexbox */
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: center;
+ align-items: center;
+
+/* text styles */
+ text-align: center;
+ color: white;
+
+/* background styles */
+ background-color: var(--content1);
+ background-size: cover;
+ background-position: center center;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
 }
 
 .book-gallery {
