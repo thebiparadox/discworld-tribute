@@ -39,9 +39,9 @@ body {
 
 .book-gallery {
 /* flexbox */
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
+display: flex;
+flex-flow: row wrap;
+justify-content: flex-start;
 
 /* margins */
     margin: 0 auto;
