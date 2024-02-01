@@ -2,6 +2,7 @@
     box-sizing: border-box;
     --content1: #C3B1E1;
     --content2: #FFFFF580;
+    --text1: linen;
 }
 
 body {
@@ -22,7 +23,7 @@ body {
 
 /* text styles */
     text-align: center;
-    color: white;
+    color: var(--text1);
 
 /* background styles */
     background-image: url(./site-images/pratch913.jpg);
@@ -73,28 +74,25 @@ body {
         background-attachment: fixed;
     }
 
-.quotation {
- /* sizing */
- width: 100vw;
- height: 100vh;
+figure {
+    position: relative;
+}
 
-/* flexbox */
- display: flex;
- flex-direction: row;
- flex-wrap: wrap;
- justify-content: center;
- align-items: center;
-
+figcaption {
+   
 /* text styles */
- text-align: center;
- color: white;
+    color: black;
+    text-align: right;
+    font-size: 1.5rem;
+
+/* position */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 1em;
 
 /* background styles */
- background-color: var(--content1);
- background-size: cover;
- background-position: center center;
- background-repeat: no-repeat;
- background-attachment: fixed;
+    background-color: var(--content2);
 }
 
 .book-gallery {
