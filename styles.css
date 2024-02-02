@@ -12,20 +12,20 @@ body {
 }
 
 .intro {
-/* sizing */
+    /* sizing */
     width: 100vw;
     height: 100vh;
 
-/* flexbox */
+    /* flexbox */
     display: flex;
     justify-content: center;
     align-items: center;
 
-/* text styles */
+    /* text styles */
     text-align: center;
     color: var(--text1);
 
-/* background styles */
+    /* background styles */
     background-image: url(./site-images/pratch913.jpg);
     background-size: cover;
     background-position: center center;
@@ -34,85 +34,131 @@ body {
 }
 
 .intro h1 {
-/* text styles */
+    /* text styles */
     font-size: 5em;
 
-/* margins */
+    /* margins */
     margin-top: 0;
     margin-bottom: 0.5em;
 }
 
 .content {
 
-/* margins and padding */
+    /* margins and padding */
     padding: 4em;
     margin: 4em;
     border: 1px solid black;
 
-/* background styles */
+    /* background styles */
     background-color: var(--content2);
 }
 
 .memorial {
     /* sizing */
-        width: 100vw;
-        height: 100vh;
-    
+    width: 100vw;
+    height: 100vh;
+
     /* flexbox */
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     /* margins */
-        margin: 0 auto;
-    
+    margin: 0 auto;
+
     /* background styles */
-        background-image: url(./site-images/terry-pratchett-tribute-memorial.jpg);
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }
+    background-image: url(./site-images/terry-pratchett-tribute-memorial.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.the-luggage {
+    /* sizing */
+    width: 100vw;
+    height: 100vh;
+
+    /* flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* margins */
+    margin: 0 auto;
+
+    /* background styles */
+    background-image: url(./site-images/the-luggage.webp);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.ankh-morpork {
+    /* sizing */
+    width: 100vw;
+    height: 100vh;
+
+    /* flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* margins */
+    margin: 0 auto;
+
+    /* background styles */
+    background-image: url(./site-images/ankh-morpork.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 
 figure {
     position: relative;
 }
 
 figcaption {
-   
-/* text styles */
+
+    /* text styles */
     color: black;
     text-align: right;
     font-size: 1.5rem;
 
-/* position */
+    /* position */
     position: absolute;
     bottom: 0;
     left: 0;
     margin: 1em;
+    padding: .5em;
 
-/* background styles */
+    /* background styles */
     background-color: var(--content2);
 }
 
-.book-gallery {
-/* flexbox */
-display: flex;
-flex-flow: row wrap;
-justify-content: flex-start;
+.italic {
+    font-style: italic;
+}
 
-/* margins */
+.book-gallery {
+    /* flexbox */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+
+    /* margins */
     margin: 0 auto;
 }
 
 .book-gallery img {
-/* sizing */
+    /* sizing */
     width: 100%;
     max-width: 350px;
     height: 300px;
 
-/* image styles */
+    /* image styles */
     object-fit: cover;
     border-radius: 10px;
 }
-
