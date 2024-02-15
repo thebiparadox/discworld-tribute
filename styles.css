@@ -1,158 +1,110 @@
-* {
-    box-sizing: border-box;
-    --content1: #C3B1E1;
-    --content2: #FFFFF580;
-    --text1: linen;
+*
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  --text-1: linen;
+}
+
+html {
+  font-size: 16px;
 }
 
 body {
-    margin: 0;
-    max-width: 100%;
-    overflow-x: hidden;
+  background-color: #ffffff;
 }
 
-.intro {
-    /* sizing */
-    width: 100vw;
-    height: 100vh;
-
-    /* flexbox */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    /* text styles */
-    text-align: center;
-    color: var(--text1);
-
-    /* background styles */
-    background-image: url(./site-images/pratch913.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+main {
+    min-height: 100%dvh;
+    min-height: 100%vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    grid-template-rows: repeat(7, 1fr);
 }
 
-.intro h1 {
-    /* text styles */
-    font-size: 5em;
-
-    /* margins */
-    margin-top: 0;
-    margin-bottom: 0.5em;
-}
-
-.content {
-
-    /* margins and padding */
-    padding: 4em;
-    margin: 4em;
-    border: 1px solid black;
-
-    /* background styles */
-    background-color: var(--content2);
-}
-
-.memorial {
-    /* sizing */
-    width: 100vw;
-    height: 100vh;
-
-    /* flexbox */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    /* margins */
-    margin: 0 auto;
-
-    /* background styles */
-    background-image: url(./site-images/terry-pratchett-tribute-memorial.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-.the-luggage {
-    /* sizing */
-    width: 100vw;
-    height: 100vh;
-
-    /* flexbox */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    /* margins */
-    margin: 0 auto;
-
-    /* background styles */
-    background-image: url(./site-images/the-luggage.webp);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-.ankh-morpork {
-    /* sizing */
-    width: 100vw;
-    height: 100vh;
-
-    /* flexbox */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    /* margins */
-    margin: 0 auto;
-
-    /* background styles */
-    background-image: url(./site-images/ankh-morpork.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-figure {
-    position: relative;
-}
-
-figcaption {
-
-    /* text styles */
-    color: black;
-    text-align: right;
+.subtitle {
     font-size: 1.5rem;
-
-    /* position */
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    margin: 1em;
-    padding: .5em;
-
-    /* background styles */
-    background-color: var(--content2);
 }
 
-.italic {
-    font-style: italic;
+.primary-header {  
+    display: grid;
+    grid-column: 1 / -1;
+    grid-row: 1/ 2;
+    place-items: center;
+    margin: 0;
+    padding: 0;
+
+/* text styles*/
+    color: var(--text-1)
 }
+
+.primary-header > * {
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+}
+
+.primary-header__img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+section {
+    border: solid black 2px;
+}
+
+.text {
+    grid-column: 1 / -1;
+    font-size: 1.8rem;
+    letter-spacing: 0.6px;
+}
+
+.author-info {
+    display: grid;
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    place-items: left;
+    margin: 0;
+    padding: 0;
+}
+
+.author-info__img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.vimes-boot-index {
+    display: grid;
+    grid-template-columns: 1 / -1;
+    grid-template-rows: auto;
+}
+
+.vimes-boot-index__img {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+}
+
+.series-info {
+    display: grid;
+    grid-column: 1 / -1;
+    grid-row: 4 / 5;
+    place-items: left;
+    margin: 0;
+    padding: 0;
+} 
 
 .book-gallery {
-    /* flexbox */
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-
-    /* margins */
-    margin: 0 auto;
+display: grid;
+grid-column: 1 / -1;
+grid-row: 5 / 6;
 }
 
 .book-gallery img {
+    
     /* sizing */
     width: 100%;
     max-width: 350px;
@@ -161,4 +113,4 @@ figcaption {
     /* image styles */
     object-fit: cover;
     border-radius: 10px;
-}
+} 
