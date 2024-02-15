@@ -91,6 +91,10 @@ text-transform: uppercase;
 }
 
 .tribute-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+
     padding-block: 2rem;
     width: min(95%, 70rem);
     margin-inline: auto;
@@ -99,6 +103,7 @@ text-transform: uppercase;
 .content {
 background-color: var(--text-1);
 border: 2px solid black;
+padding: 2em;
 }
 
 .grid {
@@ -113,10 +118,10 @@ border: 2px solid black;
 
 }
 
-.full-image {
-
+.grid-span-3 {
+grid-column: span 3;
 }
 
 .book-gallery {
-    
+
 }
