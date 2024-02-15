@@ -1,3 +1,8 @@
+:root {
+    --background-1: linen;
+
+    --ff: "Inknut Antiqua", serif;
+}
 /* Box sizing rules */
 *,
 *::before,
@@ -68,12 +73,50 @@ body {
     display: grid;
     place-content: center;
     min-height: 100vh;
+    background-color: #ffffff;
+    font-family: var(--ff);
 } 
 
 /* components */
+header {
+
+}
+
+.hero {
+
+}
+
+#hero-title {
+text-transform: uppercase;
+}
+
 .tribute-grid {
     padding-block: 2rem;
     width: min(95%, 70rem);
     margin-inline: auto;
   }
-  
+
+.content {
+background-color: var(--text-1);
+border: 2px solid black;
+}
+
+.grid {
+
+}
+
+.image {
+
+}
+
+.article-image {
+
+}
+
+.full-image {
+
+}
+
+.book-gallery {
+    
+}
