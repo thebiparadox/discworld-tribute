@@ -78,18 +78,6 @@ body {
 } 
 
 /* components */
-header {
-
-}
-
-.hero {
-
-}
-
-#hero-title {
-text-transform: uppercase;
-}
-
 .tribute-grid {
     display: grid;
     gap: 1.5rem;
@@ -99,6 +87,19 @@ text-transform: uppercase;
     width: min(95%, 70rem);
     margin-inline: auto;
   }
+
+  header {
+
+  }
+  
+  .hero {
+
+  }
+  
+  #hero-title {
+  text-transform: uppercase;
+  }
+  
 
 .content {
 background-color: var(--text-1);
